@@ -44,8 +44,8 @@ def on_message(client, userdata, msg):
     setText(key + ": \n" + str(value))
 
 mqttc.on_message = on_message
-mqttc.username_pw_set("user18", password="tmv7ZRZ7")
-mqttc.connect("202.50.209.80", 1883)
+mqttc.username_pw_set("Your IOT Cloud Username", password="Your IOT cloud password")
+mqttc.connect("Your Cloud Server's IP address", Port Number goes here)
 mqttc.subscribe([("ASatija/Ultrasonic", 1), ("ASatija/Sound", 1), ("ASatija/Rotary", 1), ("ASatija/Light", 1),
                  ("ASatija/Red_LED", 1)])
 
